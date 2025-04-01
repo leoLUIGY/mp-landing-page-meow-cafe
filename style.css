@@ -97,6 +97,13 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
+
+.navbar__hamburguer-button button{
+    background-color: transparent;
+    display: none;
+}
+
+
 .titles{
     margin-top: 45px;
 }
@@ -125,4 +132,93 @@ body{
     width:350px;
     margin-top:20px;
     line-height: 157%;
+}
+
+.navbar__mobile{
+    display: none;
+}
+@media screen and (max-width:500px)
+{
+    .container{
+        width: 100%;
+        overflow:hidden;
+        padding: 10px;
+    }
+
+    .navbar__login-link
+    {
+        display: none;
+    }
+    .navbar__login-links{
+        display: none;
+    }
+    .navbar__links
+    {
+        display: none;
+    }
+
+    .navbar__logo{
+        width: 100px;
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    .navbar__logo-links
+    {
+        gap:10px;
+    }
+
+    .navbar__login-group
+    {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap:10px;
+    }
+
+    .navbar__delivery-link button{
+        font-size: 16px;
+    }
+
+    .navbar__title
+    {
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 0px;
+    }
+
+    .navbar__hamburguer-button button{
+        background-color: transparent;
+        display: block;
+    }
+    .header-image{
+        top:15px;
+        right: -270px;
+        height: 450px;
+    }
+
+    .navbar__mobile.open{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top:12px;
+        gap: 10px;
+    }
+    .navbar__mobile{
+        display: none;
+    }
+    .titles{
+        margin-top: 25px;
+    }
+    .titles__main
+    {
+        font-size: 32px;
+        width: 154px;
+        font-weight: 700;
+        line-height: 104.5%;
+        margin-top:12px;
+    }
+    .titles__description{
+        width: 160px;
+    }
 }

@@ -10,12 +10,119 @@
 
 :root {
     --bg-color: #F7F2E8;
+    --title-color:#1A1A1A;
+    --headings-color: #3c0e0e;
+    --brand-color: #431B1B;
 }
 
 body{
     background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-image
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -1;
 }
 
 .container{
     width: 1188px;
+    position: relative;
+}
+
+.navbar{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar__logo
+{
+    width: 120px;
+    height: 150px;
+    margin-right: 50px;
+    
+}
+.navbar__logo-links
+{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links{
+    display: flex;
+    list-style: none;
+    gap:42px;
+    color: var(--headings-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar__links .active{
+    border-bottom: 5px solid var(--headings-color) ;
+}
+
+.navbar__title{
+    margin-right: 42px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+.navbar__login-group
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap:42px;
+}
+.navbar__login-link
+{
+    color:var(--headings-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar__delivery-link button{
+    background-color: var(--brand-color);
+    padding: 10px 32px;
+    border-radius: 39px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.titles{
+    margin-top: 45px;
+}
+.titles__slogan
+{
+    font-weight: 700;
+    color:var(--headings-color);
+    font-size: 24px;
+
+}
+
+.titles__main
+{
+    color: var(--headings-color);
+    font-weight: 700;
+    font-size: 80px;
+    width:252px;
+    line-height: 104.5%;
+}
+
+.titles__description
+{
+    color: var(--headings-color);
+    font-weight: 500;
+    font-size: 16px;
+    width:350px;
+    margin-top:20px;
+    line-height: 157%;
 }
